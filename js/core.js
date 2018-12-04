@@ -1,7 +1,7 @@
 "use strict";
 
 
-const version = 3;
+const version = 4;
 
 
 let data = {
@@ -32,6 +32,8 @@ function load() {
     
     let cookieStr = document.cookie;
     console.log(cookieStr);
+    encodedJson = cookieStr.split('=')[1];
+    console.log(encodedJson);
     let decodedJson = decodeURI(cookieStr);
     console.log(decodedJson);
     let readData = JSON.parse(decodedJson);
