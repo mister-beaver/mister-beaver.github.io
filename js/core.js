@@ -1,7 +1,7 @@
 "use strict";
 
 
-const version = 4;
+const version = 5;
 
 
 let data = {
@@ -45,7 +45,8 @@ function load() {
 
 
 $(function() {
+    console.log("ver " + version);
     $("#ver").text(version);
-    $("#input").text(JSON.stringify(data))
+    $("#input").text(JSON.stringify(data));
 });
 
