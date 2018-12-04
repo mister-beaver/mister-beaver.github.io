@@ -32,7 +32,7 @@ function load() {
     
     let cookieStr = document.cookie;
     console.log(cookieStr);
-    encodedJson = cookieStr.split('=')[1];
+    let encodedJson = cookieStr.split('=')[1];
     console.log(encodedJson);
     let decodedJson = decodeURI(cookieStr);
     console.log(decodedJson);
