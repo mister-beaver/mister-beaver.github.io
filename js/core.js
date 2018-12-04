@@ -28,7 +28,9 @@ function load() {
     console.log("loading data");
     
     let cookieStr = document.cookie;
+    console.log(cookieStr);
     let decodedJson = decodeURI(cookieStr);
+    console.log(decodedJson);
     let readData = JSON.parse(decodedJson);
     
     console.log(readData);
