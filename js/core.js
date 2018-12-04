@@ -1,6 +1,9 @@
 "use strict";
 
 
+const version = 3;
+
+
 let data = {
     name: "Example",
     description: "This is just some data.",
@@ -40,6 +43,7 @@ function load() {
 
 
 $(function() {
+    $("#ver").text(version);
     $("#input").text(JSON.stringify(data))
 });
 
